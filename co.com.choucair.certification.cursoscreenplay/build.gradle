@@ -1,0 +1,28 @@
+repositories {
+    mavenCentral()
+}
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.70")
+    }
+}
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
+dependencies {
+    implementation 'net.serenity-bdd:serenity-core:2.0.70'
+    implementation 'net.serenity-bdd:serenity-junit:2.0.70'
+    implementation 'junit:junit:4.13'
+    implementation 'org.assertj:assertj-core:3.16.1'
+    implementation 'org.slf4j:slf4j-simple:2.0.0-alpha1'
+    implementation 'net.serenity-bdd:serenity-cucumber:1.9.45'
+    implementation 'net.serenity-bdd:serenity-screenplay:2.0.70'
+    implementation 'net.serenity-bdd:serenity-screenplay-webdriver:2.0.70'
+}
+gradle.startParameter.continueOnFailure = true
