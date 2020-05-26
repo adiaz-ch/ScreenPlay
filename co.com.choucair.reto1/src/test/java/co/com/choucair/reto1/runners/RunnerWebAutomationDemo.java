@@ -6,8 +6,8 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions (features = "src/test/resources/features/web_automation_demo_site.feature",
-        tags = "@tag1",
+        tags = "@scenario1",
         glue = "co.com.choucair.reto1.stepdefinitions",
         snippets = SnippetType.CAMELCASE )
-public class RunnerReto1 {
+public class RunnerWebAutomationDemo {
 }
