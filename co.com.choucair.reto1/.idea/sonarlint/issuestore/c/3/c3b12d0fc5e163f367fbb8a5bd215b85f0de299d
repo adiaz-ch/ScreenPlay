@@ -1,0 +1,11 @@
+
+P
+java:S1481".Remove this unused "languages" local variable.(’ÁõÃùÿÿÿÿ8“©´¥.
+I
+java:S1481",Remove this unused "hobbies" local variable.(œ‘ó8¼àö³¥.
+b
+java:S1128"ERemove this unused import 'net.serenitybdd.screenplay.actions.Click'.(€Äø8Üâ™¥.
+_
+java:S1854"=Remove this useless assignment to local variable "languages".(’ÁõÃùÿÿÿÿ8×Š´¥.
+X
+java:S1854";Remove this useless assignment to local variable "hobbies".(œ‘ó8¼àö³¥.
