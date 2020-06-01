@@ -17,3 +17,9 @@ w
 Gsrc/main/java/co/com/choucair/reto1/userinterface/RegisterFormPage.java,a\a\aa1019a573ca2accfb7d4b51ed5831634a5c23ed
 g
 7src/main/java/co/com/choucair/reto1/tasks/Register.java,c\3\c3b12d0fc5e163f367fbb8a5bd215b85f0de299d
+w
+Gsrc/main/java/co/com/choucair/reto1/interactions/SelectInteraction.java,5\d\5dccd1a52944f8d0462f2c81971a033f96b08949
+s
+Csrc/main/java/co/com/choucair/reto1/userinterface/WebTablePage.java,9\7\971d90797a1090d9179ba340eefba1d89facf2a4
+i
+9src/main/java/co/com/choucair/reto1/questions/Answer.java,0\a\0a5ab747b97ebad56731ba3b8aa5915fe9a54f0e
