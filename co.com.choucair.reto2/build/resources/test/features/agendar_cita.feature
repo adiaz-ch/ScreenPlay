@@ -1,16 +1,17 @@
 #Autor: adiaz@choucairtesting.com
 @Stories
-Feature: completar
-  completar
+Feature: Manage Medical Appointment
+  As a patient
+  I want to request a medical appointment
+  Through the Hospital Administration system
   @scenario1
-  Scenario Outline: completar
-    Given completar
-    When completar
-      | FirstName    | LastName    |  Address   | Email   | Phone   | Gender    | Hobbies   | Languages   | Skills    | Conuntry1   | Country2    | Date_Of_Birth_Year    | Date_Of_Birth_Month   | Date_Of_Birth_Day   | Password1   | Password2   |
-      | <FirstName>  | <LastName>  |  <Address> | <Email> | <Phone> | <Gender>  | <Hobbies> | <Languages> | <Skills>  | <Conuntry1> | <Country2>  | <Date_Of_Birth_Year>  | <Date_Of_Birth_Month> | <Date_Of_Birth_Day> | <Password1> | <Password2> |
-    Then completar
+  Scenario Outline: Schedule a medical appointment
+    Given than Carlos needs to schedule a medical appointment in option: Agendar Cita
+    When he schedules an appointment
+      | AppointmentDate   | PatientDocument   |  DoctorDocument   | Observations   |
+      | <AppointmentDate> | <PatientDocument> |  <DoctorDocument> | <Observations> |
+    Then He verifies that the message appears on the screen: Datos guardados correctamente
 
     Examples:
-      | FirstName | LastName  | Address       | Email     | Phone       | Gender  | Hobbies                 | Languages         | Skills  | Conuntry1 | Country2  | Date_Of_Birth_Year  | Date_Of_Birth_Month | Date_Of_Birth_Day | Password1 | Password2 |
-      | Alix      | Diaz      | cll 1 # 2 -3  | b@a.com   | 3184579855  | Male    | Cricket, Movies, Hockey | Spanish, English  | APIs    | Colombia  | Australia | 1992                | January             | 4                 | Pass123   | Pass123   |
-      | Alix      | Diaz      | cll 1 # 2 -3  | c@a.com   | 3184579856  | FeMale  | Cricket, Hockey         | Spanish           | APIs    | Colombia  | Australia | 1993                | January             | 5                 | Pass123   | Pass123   |
+      | AppointmentDate | PatientDocument | DoctorDocument  | Observations  |
+      | 06/10/2020      | 1094000000      | 1094000001      | Observations  |
